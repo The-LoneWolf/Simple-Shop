@@ -1,0 +1,547 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+ body{font-family: 'Kalam', cursive !important;font-weight:300;margin:0;}
+
+ *{font-family: 'Kalam', cursive !important;}
+
+ html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+#menu li {
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:40%;
+	right:0;
+	z-index: 70;
+	padding: 0;
+	margin:0;
+}
+.twitter-share-button{
+	position: fixed;
+	z-index: 99;
+	right: 149px;
+	top: 9px;
+}
+#download{
+	margin: 10px 0 0 0;
+	padding: 15px 10px;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #49afcd;
+	background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from( #5bc0de),to( #2f96b4));
+	background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: linear-gradient(top, #5bc0de, #2f96b4);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+	border-color: #2f96b4 #2f96b4 #1f6377;
+	border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	vertical-align: middle;
+	cursor: pointer;
+	display: inline-block;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+#download a{
+	text-decoration:none;
+	color:#fff;
+}
+#download:hover{
+	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+	background-color: #2F96B4;
+	background-position: 0 -15px;
+	-webkit-transition: background-position .1s linear;
+	-moz-transition: background-position .1s linear;
+	-ms-transition: background-position .1s linear;
+	-o-transition: background-position .1s linear;
+	transition: background-position .1s linear;
+}
+#infoMenu{
+	height: 20px;
+	color: #f2f2f2;
+	position:fixed;
+	z-index:70;
+	bottom:0;
+	width:100%;
+	text-align:right;
+	font-size:0.9em;
+	padding:8px 0 8px 0;
+}
+#infoMenu ul{
+	padding: 0 40px;
+}
+#infoMenu li a{
+	display: block;
+	margin: 0 22px 0 0;
+	color: #333;
+}
+#infoMenu li a:hover{
+	text-decoration:underline;
+}
+#infoMenu li{
+	display:inline-block;
+	position:relative;
+}
+#examplesList{
+	display:none;
+	background: #282828;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 20px;
+	float: left;
+	position: absolute;
+	bottom: 29px;
+	right: 0;
+	width:638px;
+	text-align:left;
+}
+#examplesList ul{
+	padding:0;
+}
+#examplesList ul li{
+	display:block;
+	margin: 5px 0;
+}
+#examplesList ul li a{
+	color: #BDBDBD;
+	margin:0;
+}
+#examplesList ul li a:hover{
+	color: #f2f2f2;
+}
+#examplesList .column{
+	float: left;
+	margin: 0 20px 0 0;
+}
+#examplesList h3{
+	color: #f2f2f2;
+	font-size: 1.2em;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	padding: 0 0 5px 0;
+}
+
+
+
+/* Demos Menu
+ * --------------------------------------- */
+ #demosMenu{
+	position:fixed;
+	bottom: 10px;
+	right:10px;
+	z-index: 999;
+ }
+
+
+ /* Simple Shop
+  * --------------------------------------- */
+
+
+  h1{
+    font-size: 5em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+  }
+  .intro p{
+    color: #fff;
+  }
+
+  /* Centered texts in each section
+  * --------------------------------------- */
+  .section{
+    text-align:center;
+  }
+
+  /* Fixed header and footer.
+  * --------------------------------------- */
+  #header{
+    position:fixed;
+    height: 50px;
+    display:block;
+    width: 100%;
+    background: #fff;
+    z-index:9;
+    text-align:center;
+    color: #000;
+    padding: 20px 0 0 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+  }
+
+
+
+  /* Bottom menu
+  * --------------------------------------- */
+  #infoMenu {
+    bottom: 80px;
+  }
+  #infoMenu li a {
+    color: #fff;
+    z-index: 999;
+  }
+
+  .circleshadow {
+    width: 60vh;
+    height: 60vh;
+    background-color: #eed;
+    border-radius: 30vh;
+    margin-left: 25px;
+  }
+
+  .circleimg{
+      width: 40vh;
+      height: 60vh;
+  }
+
+  .btn {
+    display: inline-block;
+    width: 100px;
+    background: #dc000c;
+    color: #2f2f2f;
+    font-size: 22px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+
+  .btn-radius{
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+  }
+
+  .btn:hover {
+    background: #FFA000;
+    text-decoration: none;
+  }
+
+  .price_container {
+      position: relative;
+      text-align: center;
+      color: white;
+      margin-left: -35vh;
+      margin-top: -60vh;
+  }
+
+  .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+  }
+
+  .product-count {
+    height: 30px;
+  }
+
+  .product-count a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+  }
+
+  .button-count {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #dc000c;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+  }
+  .button-count:active {
+    background-color: #dc000c;
+  }
+
+  .number-product {
+    display: inline-block;
+    width: 46px;
+    height: 28px;
+    font-size: 20px;
+    border: 0px solid silver;
+    color: #fff;
+    text-align: center;
+    background: none;
+    outline: none;
+    font-size: 24px;
+  }
+
+  :disabled {
+    background-color: silver;
+  }
+
+  .box{
+    vertical-align: middle;
+    margin-top: 12vh;
+  }
+
+  #section0, .fullpagex{
+    background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+    background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+    background: linear-gradient(#4BBFC3,#7BAABE);
+  }
+
+  #section2{
+    background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#636F8F));
+    background: -webkit-linear-gradient(#969AC6, #636F8F);
+    background: linear-gradient(#969AC6,#636F8F);
+  }
+
+  #section1{
+    background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#969ac6));
+    background: -webkit-linear-gradient(#7BAABE, #969AC6);
+    background: linear-gradient(#7BAABE,#969AC6);
+  }
+
+  .fullpagex{
+    min-height: 100%;
+  }
+
+  #footer-btn{
+    bottom:0px;
+    position : fixed !important;
+    height: 50px;
+    display:block;
+    width: 100%;
+    background: #dc000c;
+    z-index:9;
+    text-align:center;
+    color: #fff;
+    padding: 20px 0 0 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+  }
+
+  .bill-icon {
+    background-image: url("./imgs/invoice.svg");
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+  }
+
+
+
+  #header{
+    top:0px;
+  }
+  .half{
+    width: 50%;
+    float: left;
+  }
+  .one-third{
+    width: 33%;
+    float: left;
+  }
+  .two-third{
+    width: 66%;
+    float: left;
+  }
+  .visible_small{
+    display: none;
+  }
+
+  @media (max-width: 1024px) {
+
+    .one-third{
+      width: 100%;
+      float: left;
+    }
+    .two-third{
+      width: 100%;
+      float: left;
+    }
+
+    .circleshadow {
+      width: 50vh;
+      height: 50vh;
+      background-color: #eed;
+      border-radius: 25vh;
+    }
+
+    .circleimg{
+        width: 35vh;
+        height: 50vh;
+    }
+
+    .price_container {
+        margin-top: -50vh;
+    }
+
+  }
+
+  @media (max-width: 950px) {
+
+    .visible_big{
+      display: none;
+    }
+
+    .visible_small{
+      display: inherit;
+      margin-top: 6vh !important;
+    }
+
+  }
+
+  @media (min-width: 750px) and (max-width: 950px) {
+
+    .circleshadow {
+      margin-left : 115px;
+    }
+
+  }
+
+  @media (min-width: 950px) and (max-width: 1024px) {
+
+    .circleshadow {
+      margin-left : 150px;
+    }
+
+  }
+
+  @media (max-width: 412px) {
+
+    .circleshadow {
+      margin-left : 21px;
+      width: 40vh;
+      height: 40vh;
+    }
+
+    .circleimg{
+        width: 25vh;
+        height: 38vh;
+    }
+
+    .price_container {
+        margin-top: -35vh;
+    }
+
+  }
+
+  @media (max-height: 736px) {
+
+    .circleshadow {
+      margin-top : 25px;
+    }
+
+  }

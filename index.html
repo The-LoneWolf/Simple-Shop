@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Simple Shop</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed header and footer." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="./examples.css" />
+
+</head>
+<body>
+
+<div id="header"><h5>Buy Coffee with smile :)</h3></div>
+<a href="#bill" id="footer-btn" class="btn bill">
+	<span class="bill-icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+	<span>Show Bill</span>
+</a>
+
+<div id="fullpage">
+
+	<ul id="menu">
+	    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Latte</a></li>
+	    <li data-menuanchor="secondPage"><a href="#secondPage">Mocha</a></li>
+	    <li data-menuanchor="3rdPage"><a href="#3rdPage">Cappuccino</a></li>
+	</ul>
+
+	<div class="section " id="section0">
+		<div class="intro">
+				<div class="one-third">
+					<div class="circleshadow">
+							<img class="circleimg" src="./imgs/latte.png"/>
+							<div class="price_container">
+								<img src="./imgs/pricetag.png" alt="price" style="width:10%;">
+								<div class="centered">2$</div>
+							</div>
+					</div>
+					<div class="box visible_small">
+						<img src="./imgs/coffee-cup.svg" height="50px" width="50px"/>
+						<div class="product-count">
+						  <button class="button-count button-count-1 no-active" disabled>-</button>
+						  <input type="text" readonly class="number-product count-1" value="0">
+						  <button class="button-count button-count-1">+</button>
+						</div>
+						<br>
+					</div>
+				</div>
+				<div class="two-third visible_big">
+					<div class="box">
+						<p class="">
+							Caffè latte is a coffee-based drink made primarily from espresso and steamed milk. It consists of one-third espresso, two-thirds heated milk and about 1cm of foam.
+						</p>
+						<br>
+						<img src="./imgs/coffee-cup.svg" height="50px" width="50px"/>
+						<div class="product-count">
+						  <button class="button-count button-count-1 no-active" disabled>-</button>
+						  <input type="text" readonly class="number-product count-1" value="0">
+						  <button class="button-count button-count-1">+</button>
+						</div>
+						<br>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="section" id="section1">
+
+		<div class="intro">
+			<div class="one-third">
+				<div class="circleshadow">
+						<img class="circleimg" src="./imgs/mocca.png"/>
+						<div class="price_container">
+							<img src="./imgs/pricetag.png" alt="price" style="width:10%;">
+							<div class="centered">2.5$</div>
+						</div>
+				</div>
+				<div class="box visible_small">
+					<img src="./imgs/coffee-cup.svg" height="50px" width="50px"/>
+					<div class="product-count">
+					  <button class="button-count button-count-2 no-active" disabled>-</button>
+					  <input type="text" readonly class="number-product count-2" value="0">
+					  <button class="button-count button-count-2">+</button>
+					</div>
+					<br>
+				</div>
+			</div>
+			<div class="two-third visible_big">
+				<div class="box">
+					<p class="">
+						A caffè mocha, also called mocaccino, is a chocolate-flavored variant of a caffè latte. Other commonly used spellings are mochaccino and also mochachino.</p>
+					<br>
+					<img src="./imgs/coffee-cup.svg" height="50px" width="50px"/>
+					<div class="product-count">
+						<button class="button-count button-count-2 no-active" disabled>-</button>
+						<input type="text" readonly class="number-product count-2" value="0">
+						<button class="button-count button-count-2">+</button>
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<div class="one-third">
+				<div class="circleshadow">
+						<img class="circleimg" src="./imgs/cappuccino.png"/>
+						<div class="price_container">
+							<img src="./imgs/pricetag.png" alt="price" style="width:10%;">
+							<div class="centered">3$</div>
+						</div>
+				</div>
+				<div class="box visible_small">
+					<img src="./imgs/coffee-cup.svg" height="50px" width="50px"/>
+					<div class="product-count">
+					  <button class="button-count button-count-3 no-active" disabled>-</button>
+					  <input type="text" readonly class="number-product count-3" value="0">
+					  <button class="button-count button-count-3">+</button>
+					</div>
+					<br>
+				</div>
+			</div>
+			<div class="two-third visible_big">
+				<div class="box">
+					<p class="">
+						A cappuccino is an Italian coffee drink that is traditionally prepared with double espresso, and steamed milk foam. Variations of the drink involve the use of cream instead of milk, and flavoring with cinnamon or chocolate powder.
+					</p>
+					<br>
+					<img src="./imgs/coffee-cup.svg" height="50px" width="50px"/>
+					<div class="product-count">
+						<button class="button-count button-count-3 no-active" disabled>-</button>
+						<input type="text" readonly class="number-product count-3" value="0">
+						<button class="button-count button-count-3">+</button>
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="./jquery.fullPage.js"></script>
+	<script type="text/javascript" src="./jquery.session.js"></script>
+	<script type="text/javascript" src="./add.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				menu: '#menu',
+				css3: true,
+			  continuousVertical: true
+			});
+		});
+	</script>
+
+</html>
